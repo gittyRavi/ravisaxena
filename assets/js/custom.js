@@ -72,7 +72,11 @@ $(document).ready(function () {
     }, function () {
         closeOverlay('Twitter')
     });
-
+    $("#weblink").hover(function () {
+        openOverlay('Weblink')
+    }, function () {
+        closeOverlay('Weblink')
+    });
 
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
